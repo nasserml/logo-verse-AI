@@ -1,15 +1,15 @@
 'use client';
 
 import { Button } from '@/components/ui/button';
-import { ThemeToggle } from '@/components/theme-toggle';
+
 import { motion } from 'framer-motion';
 
-export function Navbar() {
+export function Header() {
   return (
     <motion.nav
       initial={{ y: -100 }}
       animate={{ y: 0 }}
-      className="fixed w-full backdrop-blur-lg bg-background/80 z-50 border-b"
+      className="fixed w-full backdrop-blur-lg bg-background/80 z-20 border-b top-0 left-0"
     >
       <div className="container mx-auto px-4 h-16 flex items-center justify-between">
         <motion.div
@@ -21,10 +21,7 @@ export function Navbar() {
           <span className="text-xl font-bold">LogoVerse AI</span>
         </motion.div>
         <div className="flex items-center space-x-4">
-          <Button variant="ghost">Features</Button>
-          <Button variant="ghost">Pricing</Button>
-          <Button variant="ghost">About</Button>
-          <ThemeToggle />
+          
           <Button>Get Started</Button>
         </div>
       </div>
