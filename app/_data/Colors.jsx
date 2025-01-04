@@ -12,15 +12,15 @@ export default [
     colors: ["#ff6f61", "#fbae3c", "#f7f3cf", "#d9f7be", "#a7f3d0"],
   },
   {
-    "name": "Pastel Colors",
-    "colors": ["#FFB3BA", "#FFDFBA", "#FFFFBA", "#BAFFC9", "#BAE1FF"]
-  },
-    {
-    "name": "Soft Purples",
-    "colors": ["#E0BBE4", "#D291BC", "#957DAD", "#DCC6E0", "#F3E5F5"]
+    name: "Pastel Colors",
+    colors: ["#FFB3BA", "#FFDFBA", "#FFFFBA", "#BAFFC9", "#BAE1FF"],
   },
   {
-    "name": "Pastel Pinks",
-    "colors": ["#F8BBD0", "#F48FB1", "#F06292", "#EC407A", "#E91E63"]
-  }
+    name: "Soft Purples",
+    colors: ["#E0BBE4", "#D291BC", "#957DAD", "#DCC6E0", "#F3E5F5"],
+  },
+  {
+    name: "Pastel Pinks",
+    colors: ["#F8BBD0", "#F48FB1", "#F06292", "#EC407A", "#E91E63"],
+  },
 ];

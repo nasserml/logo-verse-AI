@@ -7,5 +7,7 @@ export default {
     InputDescPlaceholder: "Enter Your Logo Description Here",
     LogoColorPaletteTitle: "Logo Color Palette",
     LogoColorPaletteDesc: "Select Your Preferred Color Palette for Your Logo",
+    LogoDesignTitle: "Choose Your Logo Design",
+    LogoDesignDesc: "Select Your Preferred Logo Design for Your Logo",
 
 }

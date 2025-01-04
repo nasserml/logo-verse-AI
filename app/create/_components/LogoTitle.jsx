@@ -5,7 +5,7 @@ import Lookup from "@/app/_data/Lookup";
 import { Input } from "@/components/ui/input";
 import { useSearchParams } from "next/navigation";
 
-function LogoTitle({onHandleInputChange}) {
+function LogoTitle({ onHandleInputChange, formData }) {
   const searchParam = useSearchParams();
   const [title, setTitle] = useState(searchParam.get("title") || "");
   return (
@@ -19,7 +19,8 @@ function LogoTitle({onHandleInputChange}) {
         type="text"
         placeholder={Lookup.InputTitlePlaceholder}
         className="mt-5 p-4"
-        defaultValue={title}
+        // defaultValue={ formData?.title ||title }
+        value={ formData?.title || title}
         onChange={(e) => onHandleInputChange(e.target.value)}
       />
     </div>
