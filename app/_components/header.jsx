@@ -1,10 +1,12 @@
-'use client';
+"use client";
 
-import { Button } from '@/components/ui/button';
+import { Button } from "@/components/ui/button";
+import { UserButton, useUser } from "@clerk/nextjs";
 
-import { motion } from 'framer-motion';
+import { motion } from "framer-motion";
 
 export function Header() {
+  const { user } = useUser();
   return (
     <motion.nav
       initial={{ y: -100 }}
@@ -17,12 +19,20 @@ export function Header() {
           animate={{ opacity: 1 }}
           className="flex items-center space-x-2"
         >
-          <img src="/logo1.jpg" alt="Logo" className="w-10 h-10 rounded-full object-contain" />
+          <img
+            src="/logo1.jpg"
+            alt="Logo"
+            className="w-10 h-10 rounded-full object-contain"
+          />
           <span className="text-xl font-bold">LogoVerse AI</span>
         </motion.div>
         <div className="flex items-center space-x-4">
-          
-          <Button>Get Started</Button>
+          {user ? (
+            <Button >Dashboard</Button>
+          ) : (
+            <Button>Get Started</Button>
+          )}
+          <UserButton />
         </div>
       </div>
     </motion.nav>

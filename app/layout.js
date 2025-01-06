@@ -1,5 +1,7 @@
+import { ClerkProvider } from "@clerk/nextjs";
 import "./globals.css";
 import Provider from "./provider";
+import { dark } from "@clerk/themes";
 
 export const metadata = {
   title: "LogoVerse AI | Logo Generator",
@@ -12,10 +14,16 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en" className="dark" suppressHydrationWarning>
-      <body>
-        <Provider>{children}</Provider>
-      </body>
-    </html>
+    <ClerkProvider
+      appearance={{
+        baseTheme: dark,
+      }}
+    >
+      <html lang="en" className="dark" suppressHydrationWarning>
+        <body>
+          <Provider>{children}</Provider>
+        </body>
+      </html>
+    </ClerkProvider>
   );
 }
