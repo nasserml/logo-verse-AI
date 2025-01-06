@@ -7,6 +7,7 @@ import LogoDesc from "./_components/LogoDesc";
 import LogoPalette from "./_components/LogoPalette";
 import LogoDesigns from "./_components/LogoDesigns";
 import LogoIdea from "./_components/LogoIdea";
+import PricingModel from "./_components/PricingModel";
 
 function CreateLogo() {
   const [step, setStep] = useState(1);
@@ -42,7 +43,11 @@ function CreateLogo() {
           onHandleInputChange={(v) => onHandleInputChange("idea", v)}
           formData={formData}
         />
-      ) : null}
+      ) :  step == 6 ? (
+        <PricingModel
+          onHandleInputChange={(v) => onHandleInputChange("pricing", v)}
+          formData={formData}
+        />):null }
 
       <div className="flex justify-between items-center mt-10">
         {step != 1 ? (
