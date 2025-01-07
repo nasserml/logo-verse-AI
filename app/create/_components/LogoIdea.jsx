@@ -12,7 +12,7 @@ function LogoIdea({ onHandleInputChange, formData }) {
 
   useEffect(() => {
     formData && GetLogoIdeas();
-  }, [formData]);
+  }, []);
 
   const GetLogoIdeas = async () => {
     const result = await axios.post("/api/ai-design-ideas", {
