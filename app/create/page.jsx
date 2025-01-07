@@ -17,7 +17,7 @@ function CreateLogo() {
     console.log(formData);
   };
   return (
-    <div className="mt-40 p-10 border border-xl 2xl:">
+    <div className="mt-40 p-10 border border-xl mx-10 md:mx-20 lg:mx-40 2xl:mx-96">
       {step == 1 ? (
         <LogoTitle
           onHandleInputChange={(v) => onHandleInputChange("title", v)}

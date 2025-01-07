@@ -22,7 +22,7 @@ function LogoDesigns({ onHandleInputChange, formData }) {
             className={`cursor-pointer p-1 border-primary hover:border-2 rounded-lg ${selectedOption == design.title && 'border-primary border-2'}`}
             onClick={() => {
               setSelectedOption(design.title);
-              onHandleInputChange(design.title);
+              onHandleInputChange(design);
             }}
           >
             <Image

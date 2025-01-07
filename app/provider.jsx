@@ -27,7 +27,7 @@ function Provider({ children }) {
     <ThemeProvider attribute="class" defaultTheme="dark" enableSystem>
       <UserDetailContext.Provider value={{ userDetail, setUserDetail }}>
         <Header />
-        <div className="px-10 lg:px-32 xl:px-48 2xl:px-64">{children}</div>
+        <div className="">{children}</div>
       </UserDetailContext.Provider>
     </ThemeProvider>
   );

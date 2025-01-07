@@ -17,7 +17,7 @@ function LogoPalette({ onHandleInputChange, formData }) {
         {Colors.map((palette, index) => (
           <div
             key={index}
-            onClick={() => {
+          onClick={() => {
               setSelectedOption(palette.name);
               onHandleInputChange(palette.name);
             }}

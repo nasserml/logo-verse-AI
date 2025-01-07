@@ -11,6 +11,8 @@ export default {
     LogoDesignDesc: "Select Your Preferred Logo Design for Your Logo",
     LogoPricingModelTitle:"Select your AI Model Plan",
     LogoPricingModelDescription:"Generate Unlimited Fast Logo with your fav model",
+    LogoTitleIdea:"Logo Title Idea",
+    LogoIdeaDesc: "Select Your Preferred Logo Ideas for Your Logo",
     pricingOption : [
         {
             title:"Free",
