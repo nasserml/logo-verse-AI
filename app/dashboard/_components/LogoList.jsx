@@ -29,7 +29,7 @@ function LogoList() {
   };
 
   return (
-    <div className="mt-10">
+    <div className="mt-10 mb-40">
       <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5">
         {logoList?.length > 0
           ? logoList?.map((logo, index) => (
