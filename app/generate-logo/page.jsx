@@ -6,6 +6,7 @@ import axios from "axios";
 import Image from "next/image";
 import { Loader2 } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import Link from "next/link";
 
 function GenerateLogo() {
   const { userDetail, setUserDetail } = useContext(UserDetailContext);
@@ -54,11 +55,11 @@ function GenerateLogo() {
   const handleDownload = () => {
     const link = document.createElement("a");
     link.href = logoImage;
-    link.download =`${formData?.title || "logo"}.png`;
+    link.download = `${formData?.title || "logo"}.png`;
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
-  }
+  };
 
   return (
     <div className="mt-20 mx-10 md:mx-40 lg:mx-64 ">
@@ -73,9 +74,11 @@ function GenerateLogo() {
       {!loading && (
         <div className="flex flex-col items-center justify-center mt-10 space-y-5">
           <Image src={logoImage} alt="logo" width={600} height={600} />
-          <div>
+          <div className="flex space-x-5 items-center">
             <Button onClick={handleDownload}>Download Logo</Button>
-            <Button variant={"outline"}>Dashboard</Button>
+            <Link href={"/dashboard"}>
+              <Button variant={"outline"}>Dashboard</Button>
+            </Link>
           </div>
         </div>
       )}
