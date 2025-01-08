@@ -266,7 +266,7 @@ We welcome contributions of all kinds! Please read our [Contributing Guidelines]
 2. **Clone Your Fork**
 
    ```bash
-   git clone https://github.com/your-username/logo-verse-AI.git
+   git clone https://github.com/nasserml/logo-verse-AI.git
    cd logo-verse-AI
    ```
 
@@ -328,21 +328,11 @@ This project is licensed under the [MIT License](LICENSE). You are free to use, 
 
 If you have any questions, suggestions, or just want to say hello, feel free to reach out!
 
-- **Email**: [contact@logoverse.ai](mailto:contact@logoverse.ai)
+- **Email**: [mnasserone@gmail.com](mailto:mnasserone@gmail.com)
 - **GitHub Issues**: [Create an Issue](https://github.com/nasserml/logo-verse-AI/issues)
 
 ---
 
-## 🌐 **Community**
-
-Join our community to stay updated and share your experiences!
-
-- **Discord**: [Join our Discord server](https://discord.gg/your-invite-link)
-- **Twitter**: [@LogoVerseAI](https://twitter.com/LogoVerseAI)
-- **LinkedIn**: [LogoVerse AI](https://linkedin.com/company/logoverse-ai)
-- **Facebook**: [LogoVerse AI](https://facebook.com/LogoVerseAI)
-
----
 
 ## 💖 **Support**
 
