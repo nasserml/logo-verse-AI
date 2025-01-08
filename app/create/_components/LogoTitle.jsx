@@ -3,11 +3,11 @@ import React, { useState } from "react";
 import HeadingDescription from "./HeadingDescription";
 import Lookup from "@/app/_data/Lookup";
 import { Input } from "@/components/ui/input";
-import { useSearchParams } from "next/navigation";
+// import { useSearchParams } from "next/navigation";
 
 function LogoTitle({ onHandleInputChange, formData }) {
-  const searchParam = useSearchParams();
-  const [title, setTitle] = useState(searchParam.get("title") || "");
+  // const searchParam = useSearchParams();
+  const [title, setTitle] = useState( "");
   return (
     <div className="my-10">
       <HeadingDescription
