@@ -13,8 +13,8 @@
 ---
 
 ## 🎉 **Welcome to LogoVerse AI!**
-
-Embark on a creative journey where artificial intelligence meets design. **LogoVerse AI** is an open-source platform that revolutionizes logo creation by leveraging the latest advancements in AI technology. Whether you're a startup founder, designer, or enthusiast, LogoVerse AI empowers you to create stunning logos effortlessly. 🌟
+[Demo Link](https://logoverseai.vercel.app/)
+Embark on a creative journey where artificial intelligence meets design. **LogoVerse AI** is an open-source platform that revolutionizes logo creation by leveraging the latest advancements in AI technology. Whether you're a startup founder, designer, or enthusiast, LogoVerse AI empowers you to create stunning logos effortlessly. 🌟 
 
 ---
 
